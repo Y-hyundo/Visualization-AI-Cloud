@@ -12,16 +12,21 @@
 
 이 시뮬레이터가 정상적으로 작동하려면 모델 및 스케일러 파일이 다음 폴더 구조로 배치되어야 합니다.
 
-.
-├── models/
-│   ├── model_rank.joblib
-│   └── model_sales.joblib
-├── scalers/
-│   ├── scaler_rank.joblib
-│   └── scaler_sales.joblib
-├── app.py           (제공해주신 시뮬레이터 .py 파일)
-└── README.md        (현재 이 파일)
+models/
 
+  model_rank.joblib
+
+  model_sales.joblib
+
+scalers/
+
+  scaler_rank.joblib
+
+  scaler_sales.joblib
+
+visualization.py
+
+README.md
 
 중요: models 폴더와 scalers 폴더를 직접 생성하고, 전달받은 4개의 .joblib 파일을 각각 올바른 위치에 넣어주세요.
 
@@ -29,7 +34,7 @@
 
 1. 필수 패키지 설치
 
-실행에 필요한 파이썬 패키지 목록입니다.
+실행에 필요한 파이썬 패키지 목록입니다. 터미널에 다음 명령어를 입력하세요.
 
 pip install streamlit pandas numpy joblib matplotlib scikit-learn
 
@@ -53,7 +58,7 @@ pip install -r requirements.txt
 
 터미널에서 다음 명령어를 입력하여 Streamlit 앱을 실행합니다. (app.py는 실제 파이썬 스크립트 파일명으로 변경하세요.)
 
-streamlit run app.py
+streamlit run visualization.py
 
 
 🚀 사용 방법
