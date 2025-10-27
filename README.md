@@ -53,7 +53,7 @@ pip install -r requirements.txt
 
 터미널에서 다음 명령어를 입력하여 Streamlit 앱을 실행합니다. (app.py는 실제 파이썬 스크립트 파일명으로 변경하세요.)
 
-streamlit run app.py
+streamlit run visualization.py
 
 
 🚀 사용 방법
